@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit', (e) => {
             // console.log("Forecast : ", data.forecast)
             // console.log("Address : ", data.address)
             messageOne.textContent = "Location is " + data.location
-            var forecastData = data.forecast.summary + ". It is " + data.forecast.temperature + " degrees out. There is a " +
+            var forecastData = data.forecast.summary + " It is " + data.forecast.temperature + " degrees out. The high today is " + data.forecast.temperatureHigh + " degrees with a low of " + data.forecast.temperatureLow + " degrees. There is a " +
                 data.forecast.precipitation + "% chance of rain."
             messageTwo.textContent = forecastData
         }
